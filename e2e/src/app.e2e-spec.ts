@@ -14,13 +14,13 @@ describe('workspace-project App', () => {
 
     page.navigateTo();
 
-    var ele= element(by.css('#email-input'));
-    ele.sendKeys("1@test");
+    const ele = element(by.css('#email-input'));
+    ele.sendKeys('1@test');
 
-    var ele2= element(by.css('#email-input'));
-    ele2.sendKeys("123");
+    const ele2 = element(by.css('#email-input'));
+    ele2.sendKeys('123');
 
-    var ele3= element(by.css('#btn-submit'));
+    const ele3 = element(by.css('#btn-submit'));
     ele3.click();
 
   });

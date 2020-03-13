@@ -9,23 +9,20 @@ describe('AppComponent', () => {
 
   let service: NgxIndexedDBService = null;
 
-  let injector: Injector;
-  let cookieService: NgxIndexedDBService;
-
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule, NgxIndexedDBModule.forRoot(dbConfig)],
       declarations: [AppComponent],
       providers: [NgxIndexedDBService]
     }).compileComponents();
-    
+
   }));
 
   beforeEach(() => {
     service = TestBed.get(NgxIndexedDBService);
   });
 
-  it('should create the app', ()=> {
+  it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
