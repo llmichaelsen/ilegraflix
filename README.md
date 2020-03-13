@@ -2,8 +2,8 @@
 By: Leonardo Lovatto Michalsen
 E-mail: llmichaelsen@gmail.com
 
--  The project is a representation of a company like Netflix. Making it possible to view several films according to the user's profile.
-- It can be acessible can be accessed with any device width. It's responsive.
+-  The project is a representation of a company like Netflix. Making it possible to watch several movies according to the user's profile.
+- It can be accessed with any device width. It's responsive.
 -  Application was developed from a free template for basic structure. Its [lincense](https://github.com/llmichaelsen/ilegraflix/blob/master/LICENSE.md).
 
 ## Initializing the project
@@ -36,12 +36,12 @@ The image below shows the flow of navigation possibilities between the pages of 
 ![alt text](https://raw.githubusercontent.com/llmichaelsen/ilegraflix/master/src/assets/img/site-diagram.png)
 ### Home page
 On the homepage there are 3 movie sessions that are loaded based on the current information in the database.
-One of the movie sessions is based on the profile of the logged in user.
+One of the movie sessions is based on profile of logged in user.
 These sessions use the same component by passing different arguments.
 
 ### Profile page
   
-Here the user information and metrics are shown. Such as his last films watched in order and the films most watched in his country also ordered. Each user has their own metrics that can be viewed by accessing the system with different users.
+Here the user information and metrics are shown. Such as his last movies watched in order and the films most watched in his country also ordered. Each user has their own metrics that can be viewed by accessing the system with different users.
 
 ### Play movie page
   
