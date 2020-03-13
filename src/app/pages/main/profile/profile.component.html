@@ -1,0 +1,74 @@
+<div class="wrapper">
+  <div class="page-header">
+    <img class="dots" src="assets/img/dots.png" />
+
+    <img class="path" src="assets/img/path4.png" />
+
+    <div class="container align-items-center">
+      <div class="row">
+
+        <div class="col-lg-10 col-md-10 ml-auto mr-auto">
+          <div class="card card-coin card-plain">
+            <div class="card-header">
+              <img *ngIf="user" class="img-center img-fluid rounded-circle" [src]="'assets/img/'+user.image" />
+
+              <h4 *ngIf="user" class="title">{{user.name}}</h4>
+              <h5 *ngIf="user" class="title">prefers
+                <span class="text-primary">{{user.bestGenre }}</span>
+              </h5>
+              <h5 *ngIf="user" class="title">from
+                <span class="text-primary">{{user.country}}</span>
+              </h5>
+            </div>
+            <div class="card-body" *ngIf="user">
+              <tabset class="nav-tabs-danger justify-content-center tab-subcategories">
+                <tab heading="last watched">
+                  <div class="row">
+                    <div class="col" *ngFor="let mov of lastFiveMovies">
+                      <div class="card card-coin card-plain">
+                        <div class="card-header">
+                          <img alt="Rounded image" class="img-fluid rounded shadow" [src]="'assets/img/' + mov.image" style="width: 80px;" />
+                        </div>
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-12 text-center">
+                              <h4 class="text-uppercase">{{mov.title}}</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-footer text-center">
+                          <button [routerLink]="'/play/' + mov.id" [class]="'btn btn-simple btn-primary'">Watch now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </tab>
+                <tab [heading]="'popular in ' + user.country">
+                  <div class="row">
+                    <div class="col-md-4" *ngFor="let mov of mostWatchedContry">
+                      <div class="card card-coin card-plain">
+                        <div class="card-header">
+                          <img alt="Rounded image" class="img-fluid rounded shadow" [src]="'assets/img/' + mov.image" style="width: 80px;" />
+                        </div>
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-12 text-center">
+                              <h4 class="text-uppercase">{{mov.title}}</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-footer text-center">
+                          <button [routerLink]="'/play/' + mov.id" [class]="'btn btn-simple btn-primary'">Watch now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </tab>
+              </tabset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="wrapper">
+    <section class="section section-lg section-coins">
+        <img class="path" src="assets/img/path3.png" />
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <hr [class]="'line-'+color" />
+                    <h1>
+                        {{title1}}
+                        <span [class]="'text-'+color"> {{title2}} </span>
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4" *ngFor="let mov of moviesToShow">
+                    <div class="card card-coin card-plain">
+                        <div class="card-header">
+                            <img alt="Rounded image" class="img-fluid rounded shadow" [src]="'assets/img/' + mov.image" style="width: 150px;" />
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h4 class="text-uppercase">{{mov.title}}</h4>
+                                    <hr [class]="'line-'+color" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <ul class="list-group">
+                                    <li class="list-group-item">{{mov.duration}} minutes</li>
+                                    <li class="list-group-item">{{mov.genre}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button [routerLink]="'/play/' + mov.id" [class]="'btn btn-simple btn-'+ color">Watch now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,5 @@
+<div class="wrapper">
+    <app-movie-list title1="last" title2="releases" [releases]="true" color="primary"></app-movie-list>
+    <app-movie-list *ngIf="user" title1="your favorite" title2="genre" [genre]="user.bestGenre" color="success"></app-movie-list>
+    <app-movie-list  title1="surprise" title2="me" color="danger" [random]="true" ></app-movie-list>
+</div>
