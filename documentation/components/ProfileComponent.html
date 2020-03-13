@@ -1,0 +1,943 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ilegraflix documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ilegraflix documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ProfileComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/main/profile/profile.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-profile</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./profile.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./profile.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#isCollapsed">isCollapsed</a>
+                            </li>
+                            <li>
+                                <a href="#lastFiveMovies">lastFiveMovies</a>
+                            </li>
+                            <li>
+                                <a href="#mostWatchedContry">mostWatchedContry</a>
+                            </li>
+                            <li>
+                                <a href="#user">user</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#setLattestWhatchedUser">setLattestWhatchedUser</a>
+                            </li>
+                            <li>
+                                <a href="#setMostWatchedCountry">setMostWatchedCountry</a>
+                            </li>
+                            <li>
+                                <a href="#setUser">setUser</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(loginServ: <a href="../injectables/LoginService.html">LoginService</a>, dbService: NgxIndexedDBService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/pages/main/profile/profile.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>loginServ</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LoginService.html" target="_self" >LoginService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dbService</td>
+                                                  
+                                                        <td>
+                                                                    <code>NgxIndexedDBService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/pages/main/profile/profile.component.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/pages/main/profile/profile.component.ts:22</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setLattestWhatchedUser"></a>
+                    <span class="name">
+                        <b>
+                            setLattestWhatchedUser
+                        </b>
+                        <a href="#setLattestWhatchedUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setLattestWhatchedUser(movies)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/pages/main/profile/profile.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>movies</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setMostWatchedCountry"></a>
+                    <span class="name">
+                        <b>
+                            setMostWatchedCountry
+                        </b>
+                        <a href="#setMostWatchedCountry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setMostWatchedCountry(movies)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="47"
+                            class="link-to-prism">src/app/pages/main/profile/profile.component.ts:47</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>movies</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setUser"></a>
+                    <span class="name">
+                        <b>
+                            setUser
+                        </b>
+                        <a href="#setUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setUser(user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="32"
+                            class="link-to-prism">src/app/pages/main/profile/profile.component.ts:32</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isCollapsed"></a>
+                        <span class="name">
+                            <b>
+                            isCollapsed</b>
+                            <a href="#isCollapsed"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/pages/main/profile/profile.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lastFiveMovies"></a>
+                        <span class="name">
+                            <b>
+                            lastFiveMovies</b>
+                            <a href="#lastFiveMovies"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/pages/main/profile/profile.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mostWatchedContry"></a>
+                        <span class="name">
+                            <b>
+                            mostWatchedContry</b>
+                            <a href="#mostWatchedContry"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/pages/main/profile/profile.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="user"></a>
+                        <span class="name">
+                            <b>
+                            user</b>
+                            <a href="#user"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/pages/main/profile/profile.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, OnDestroy } from &#x27;@angular/core&#x27;;
+import { LoginService } from &#x27;../../login/login.service&#x27;;
+import { NgxIndexedDBService } from &#x27;ngx-indexed-db&#x27;;
+
+@Component({
+  selector: &#x27;app-profile&#x27;,
+  templateUrl: &#x27;./profile.component.html&#x27;,
+  styleUrls: [&#x27;./profile.component.scss&#x27;]
+})
+export class ProfileComponent implements OnInit, OnDestroy {
+
+  user;
+  lastFiveMovies &#x3D; [];
+  mostWatchedContry &#x3D; [];
+  isCollapsed &#x3D; true;
+
+  constructor(
+    private loginServ: LoginService,
+    private dbService: NgxIndexedDBService
+  ) { }
+
+  ngOnInit() {
+    const body &#x3D; document.getElementsByTagName(&#x27;body&#x27;)[0];
+    body.classList.add(&#x27;profile-page&#x27;);
+
+    this.loginServ.getUser().then(
+      user &#x3D;&gt; this.setUser(user),
+      error &#x3D;&gt; console.log(error)
+    );
+  }
+
+  setUser(user) {
+    this.user &#x3D; user;
+    const movies &#x3D; [];
+    this.dbService.openCursor(&#x27;movie-watched&#x27;, (evt) &#x3D;&gt; {
+      const cursor &#x3D; (evt.target as any).result;
+      if (cursor) {
+        movies.push(cursor.value);
+        cursor.continue();
+      } else {
+        this.setLattestWhatchedUser(movies.filter(m &#x3D;&gt; m.user &#x3D;&#x3D;&#x3D; user.id));
+        this.setMostWatchedCountry(movies);
+      }
+    });
+  }
+
+  setMostWatchedCountry(movies) {
+
+    const countryMovies &#x3D; [];
+    this.dbService.openCursorByIndex(&#x27;movie&#x27;, &#x27;country&#x27;, IDBKeyRange.only(this.user.country), (evt) &#x3D;&gt; {
+      const cursor &#x3D; (evt.target as any).result;
+      if (cursor) {
+        countryMovies.push(cursor.value);
+        cursor.continue();
+      } else {
+        this.mostWatchedContry &#x3D; setInfo();
+      }
+    });
+
+    function setInfo() {
+
+      countryMovies.map(el &#x3D;&gt; el.timesWatched &#x3D; movies.filter(w &#x3D;&gt; w.movie &#x3D;&#x3D;&#x3D; el.id).length);
+      return countryMovies.sort((a, b) &#x3D;&gt; b.timesWatched - a.timesWatched).slice(0, 3);
+    }
+  }
+
+  setLattestWhatchedUser(movies) {
+
+    const unique &#x3D; movies.sort((a, b) &#x3D;&gt; b.id - a.id).filter((thing, index, self) &#x3D;&gt;
+      index &#x3D;&#x3D;&#x3D; self.findIndex((t) &#x3D;&gt; (
+        t.movie &#x3D;&#x3D;&#x3D; thing.movie
+      ))
+    );
+
+    unique.slice(0, 4).forEach(element &#x3D;&gt; {
+      this.dbService.getByKey(&#x27;movie&#x27;, element.movie).then(
+        movie &#x3D;&gt; this.lastFiveMovies.push(movie),
+        error &#x3D;&gt; console.log(error)
+      );
+    });
+
+  }
+
+  ngOnDestroy() {
+    const body &#x3D; document.getElementsByTagName(&#x27;body&#x27;)[0];
+    body.classList.remove(&#x27;profile-page&#x27;);
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+  &lt;div class&#x3D;&quot;page-header&quot;&gt;
+    &lt;img class&#x3D;&quot;dots&quot; src&#x3D;&quot;assets/img/dots.png&quot; /&gt;
+
+    &lt;img class&#x3D;&quot;path&quot; src&#x3D;&quot;assets/img/path4.png&quot; /&gt;
+
+    &lt;div class&#x3D;&quot;container align-items-center&quot;&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+
+        &lt;div class&#x3D;&quot;col-lg-10 col-md-10 ml-auto mr-auto&quot;&gt;
+          &lt;div class&#x3D;&quot;card card-coin card-plain&quot;&gt;
+            &lt;div class&#x3D;&quot;card-header&quot;&gt;
+              &lt;img *ngIf&#x3D;&quot;user&quot; class&#x3D;&quot;img-center img-fluid rounded-circle&quot; [src]&#x3D;&quot;&#x27;assets/img/&#x27;+user.image&quot; /&gt;
+
+              &lt;h4 *ngIf&#x3D;&quot;user&quot; class&#x3D;&quot;title&quot;&gt;{{user.name}}&lt;/h4&gt;
+              &lt;h5 *ngIf&#x3D;&quot;user&quot; class&#x3D;&quot;title&quot;&gt;prefers
+                &lt;span class&#x3D;&quot;text-primary&quot;&gt;{{user.bestGenre }}&lt;/span&gt;
+              &lt;/h5&gt;
+              &lt;h5 *ngIf&#x3D;&quot;user&quot; class&#x3D;&quot;title&quot;&gt;from
+                &lt;span class&#x3D;&quot;text-primary&quot;&gt;{{user.country}}&lt;/span&gt;
+              &lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;card-body&quot; *ngIf&#x3D;&quot;user&quot;&gt;
+              &lt;tabset class&#x3D;&quot;nav-tabs-danger justify-content-center tab-subcategories&quot;&gt;
+                &lt;tab heading&#x3D;&quot;last watched&quot;&gt;
+                  &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;div class&#x3D;&quot;col&quot; *ngFor&#x3D;&quot;let mov of lastFiveMovies&quot;&gt;
+                      &lt;div class&#x3D;&quot;card card-coin card-plain&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-header&quot;&gt;
+                          &lt;img alt&#x3D;&quot;Rounded image&quot; class&#x3D;&quot;img-fluid rounded shadow&quot; [src]&#x3D;&quot;&#x27;assets/img/&#x27; + mov.image&quot; style&#x3D;&quot;width: 80px;&quot; /&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                          &lt;div class&#x3D;&quot;row&quot;&gt;
+                            &lt;div class&#x3D;&quot;col-md-12 text-center&quot;&gt;
+                              &lt;h4 class&#x3D;&quot;text-uppercase&quot;&gt;{{mov.title}}&lt;/h4&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-footer text-center&quot;&gt;
+                          &lt;button [routerLink]&#x3D;&quot;&#x27;/play/&#x27; + mov.id&quot; [class]&#x3D;&quot;&#x27;btn btn-simple btn-primary&#x27;&quot;&gt;Watch now&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/tab&gt;
+                &lt;tab [heading]&#x3D;&quot;&#x27;popular in &#x27; + user.country&quot;&gt;
+                  &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;div class&#x3D;&quot;col-md-4&quot; *ngFor&#x3D;&quot;let mov of mostWatchedContry&quot;&gt;
+                      &lt;div class&#x3D;&quot;card card-coin card-plain&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-header&quot;&gt;
+                          &lt;img alt&#x3D;&quot;Rounded image&quot; class&#x3D;&quot;img-fluid rounded shadow&quot; [src]&#x3D;&quot;&#x27;assets/img/&#x27; + mov.image&quot; style&#x3D;&quot;width: 80px;&quot; /&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                          &lt;div class&#x3D;&quot;row&quot;&gt;
+                            &lt;div class&#x3D;&quot;col-md-12 text-center&quot;&gt;
+                              &lt;h4 class&#x3D;&quot;text-uppercase&quot;&gt;{{mov.title}}&lt;/h4&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-footer text-center&quot;&gt;
+                          &lt;button [routerLink]&#x3D;&quot;&#x27;/play/&#x27; + mov.id&quot; [class]&#x3D;&quot;&#x27;btn btn-simple btn-primary&#x27;&quot;&gt;Watch now&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/tab&gt;
+              &lt;/tabset&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./profile.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">h5.title {
+    margin: 10px 0;
+}
+
+.card.card-coin .card-header {
+    margin: 0 auto 20px;
+}
+
+.page-header .container {
+    padding-top: 0;
+    margin-top: 15vh;
+}
+
+.card .card-body {
+    padding: 5px 15px;
+}
+
+h4.text-uppercase {
+    margin-bottom: 0;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="wrapper">  <div class="page-header">    <img class="dots" src="assets/img/dots.png" />    <img class="path" src="assets/img/path4.png" />    <div class="container align-items-center">      <div class="row">        <div class="col-lg-10 col-md-10 ml-auto mr-auto">          <div class="card card-coin card-plain">            <div class="card-header">              <img *ngIf="user" class="img-center img-fluid rounded-circle" [src]="\'assets/img/\'+user.image" />              <h4 *ngIf="user" class="title">{{user.name}}</h4>              <h5 *ngIf="user" class="title">prefers                <span class="text-primary">{{user.bestGenre }}</span>              </h5>              <h5 *ngIf="user" class="title">from                <span class="text-primary">{{user.country}}</span>              </h5>            </div>            <div class="card-body" *ngIf="user">              <tabset class="nav-tabs-danger justify-content-center tab-subcategories">                <tab heading="last watched">                  <div class="row">                    <div class="col" *ngFor="let mov of lastFiveMovies">                      <div class="card card-coin card-plain">                        <div class="card-header">                          <img alt="Rounded image" class="img-fluid rounded shadow" [src]="\'assets/img/\' + mov.image" style="width: 80px;" />                        </div>                        <div class="card-body">                          <div class="row">                            <div class="col-md-12 text-center">                              <h4 class="text-uppercase">{{mov.title}}</h4>                            </div>                          </div>                        </div>                        <div class="card-footer text-center">                          <button [routerLink]="\'/play/\' + mov.id" [class]="\'btn btn-simple btn-primary\'">Watch now</button>                        </div>                      </div>                    </div>                  </div>                </tab>                <tab [heading]="\'popular in \' + user.country">                  <div class="row">                    <div class="col-md-4" *ngFor="let mov of mostWatchedContry">                      <div class="card card-coin card-plain">                        <div class="card-header">                          <img alt="Rounded image" class="img-fluid rounded shadow" [src]="\'assets/img/\' + mov.image" style="width: 80px;" />                        </div>                        <div class="card-body">                          <div class="row">                            <div class="col-md-12 text-center">                              <h4 class="text-uppercase">{{mov.title}}</h4>                            </div>                          </div>                        </div>                        <div class="card-footer text-center">                          <button [routerLink]="\'/play/\' + mov.id" [class]="\'btn btn-simple btn-primary\'">Watch now</button>                        </div>                      </div>                    </div>                  </div>                </tab>              </tabset>            </div>          </div>        </div>      </div>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'MovieListComponent', 'selector': 'app-movie-list'},{'name': 'PlayMovieComponent', 'selector': 'app-play-movie'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'SelectionComponent', 'selector': 'app-selection'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ProfileComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ProfileComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
