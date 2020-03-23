@@ -1,4 +1,4 @@
-# Projeto para streaming de vídeo
+# Video streaming project 
 By: Leonardo Lovatto Michalsen
 E-mail: llmichaelsen@gmail.com
 
