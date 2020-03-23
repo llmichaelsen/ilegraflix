@@ -1,4 +1,4 @@
-# Frontend Developer Test
+# Projeto para streaming de vídeo
 By: Leonardo Lovatto Michalsen
 E-mail: llmichaelsen@gmail.com
 
